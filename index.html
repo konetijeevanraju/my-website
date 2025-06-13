@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pushpa Universe - Home</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+    }
+
+    body {
+      overflow: hidden;
+    }
+
+    .background-section {
+      background-image: url('1234.jpg'); 
+      background-size: cover;
+      background-position: center 20%;
+      background-repeat: no-repeat;
+      height: 100vh;
+      width: 100%;
+      position: relative;
+    } 
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: 1;
+    }
+
+    .navbar {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 100;
+    }
+
+    .nav-left {
+      flex: 1;
+    }
+
+    .nav-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+    }
+
+    .nav-title img {
+      height: 40px;
+      width: 40px;
+      margin-right: 10px;
+    }
+
+    .nav-title h1 {
+      font-size: 1.8rem;
+      color: #FFD700;
+      margin: 0;
+      white-space: nowrap;
+    }
+
+    .nav-links {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      list-style: none;
+      gap: 1rem;
+    }
+
+    .nav-links li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #FFD700;
+    }
+
+    .home-banner {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      text-align: center;
+    }
+
+    .home-banner h2 {
+      font-size: 3rem;
+      color: #FFD700;
+      text-shadow: 2px 2px 10px #000;
+      margin-bottom: 10px;
+    }
+
+    .home-banner p {
+      font-size: 1.2rem;
+      color: #fff;
+      text-shadow: 1px 1px 5px #000;
+    }
+
+    @media (max-width: 768px) {
+      .nav-title h1 {
+        font-size: 1.4rem;
+      }
+
+      .home-banner h2 {
+        font-size: 2rem;
+      }
+
+      .home-banner p {
+        font-size: 1rem;
+      }
+
+      .nav-links {
+        flex-wrap: wrap;
+        gap: 0.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-left"></div> <!-- Empty space to balance center alignment -->
+
+    <div class="nav-title">
+      <img src="Screenshot 2025-06-12 094740.png" alt="Pushpa Icon" />
+      <h1> Pushpa Universe</h1>
+    </div>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="video.html">Videos</a></li>
+      <li><a href="photo.html">Photos</a></li>
+      <li><a href="awards.html">Awards</a></li>
+      <li><a href="cast.html">Cast</a></li>
+      <li><a href="collection.html">Achievements</a></li>
+    </ul>
+  </nav>
+
+  <!-- Fullscreen Background -->
+  <section class="background-section">
+    <div class="overlay"></div>
+    <div class="home-banner">
+      <h2>Welcome to Pushpa Universe</h2>
+      <p>Get ready to explore the power, passion & legacy of Pushpa Raj 💥</p>
+      <p>Pushpa ante flower anukuntiva? Fireuu! 🔥</p>
+    </div>
+  </section>
+
+</body>
+</html>
